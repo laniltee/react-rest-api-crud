@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import AddToDo from "./components/AddToDo";
+import AllToDos from "./components/AllToDos";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Lanil ToDo App</h1>
+      <h2>Aka REST API Tutorial with React.JS and AXIOS</h2>
+      <div>
+        <h2>Add New ToDo</h2>
+        <AddToDo/>
+      </div>
+      <div>
+        <h2>All ToDos </h2>
+        <AllToDos/>
+      </div>
     </div>
   );
 }
