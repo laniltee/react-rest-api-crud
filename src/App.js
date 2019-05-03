@@ -1,6 +1,7 @@
 import React from 'react';
 import AddToDo from "./components/AddToDo";
-import AllToDos from "./components/AllToDos";
+// import AllToDos from "./components/AllToDos";
+import SemanticSearch from "./components/SemanticSearch";
 
 function App() {
   return (
@@ -13,8 +14,12 @@ function App() {
       </div>
       <div>
         <h2>All ToDos </h2>
-        <AllToDos/>
+        {/*<AllToDos/>*/}
       </div>
+        <div>
+            <h2>Semantic Search Integration</h2>
+            <SemanticSearch/>
+        </div>
     </div>
   );
 }
